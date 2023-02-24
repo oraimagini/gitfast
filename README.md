@@ -7,15 +7,15 @@ OPTIONS:
    -h | --help     Show this manual.
 
 Good practices:
-####feat: A new feature for the user.
-####fix: Fixes a bug that affects the user.
-####perf: Changes that improve site performance.
-####build: Changes to the build system, deployment or installation tasks.
-####ci: Changes in continuous integration.
-####docs: Changes in documentation.
-####Refactor: Refactoring code as variable or function name changes.
-####style: Changes of formatting, tabs, spaces or semicolons, etc They do not affect the user.
-####test: Add tests or refactor an existing one.
+#### feat: A new feature for the user.
+#### fix: Fixes a bug that affects the user.
+#### perf: Changes that improve site performance.
+#### build: Changes to the build system, deployment or installation tasks.
+#### ci: Changes in continuous integration.
+#### docs: Changes in documentation.
+#### Refactor: Refactoring code as variable or function name changes.
+#### style: Changes of formatting, tabs, spaces or semicolons, etc They do not affect the user.
+#### test: Add tests or refactor an existing one.
 
 EXAMPLE:
 gitfast feat-web: Add new search feature
