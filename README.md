@@ -1,12 +1,16 @@
-## GITFAST - Terminal tool to level up on your GitHub.
+### GITFAST - Terminal tool to level up on your GitHub.
 
-### USAGE:
-####   gitfast [message]
+#### USAGE:
+```
+   gitfast [message]
+```
 
-### OPTIONS:
-####   -h | --help     Show this manual.
+#### OPTIONS:
+```
+   -h | --help     Show this manual.
+```
 
-### Good practices:
+#### Good practices:
 
  feat: A new feature for the user.<br>
  fix: Fixes a bug that affects the user.<br>
@@ -18,7 +22,7 @@
  style: Changes of formatting, tabs, spaces or semicolons, etc They do not affect the user.<br>
  test: Add tests or refactor an existing one.<br>
 
-### EXAMPLE:
+#### EXAMPLE:
 ```
 gitfast feat-web: Add new search feature
 ```
