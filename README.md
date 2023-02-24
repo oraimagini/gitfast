@@ -8,15 +8,15 @@ OPTIONS:
 
 Good practices:
 
- feat: A new feature for the user.
- fix: Fixes a bug that affects the user.
- perf: Changes that improve site performance.
- build: Changes to the build system, deployment or installation tasks.
- ci: Changes in continuous integration.
- docs: Changes in documentation.
- Refactor: Refactoring code as variable or function name changes.
- style: Changes of formatting, tabs, spaces or semicolons, etc They do not affect the user.
- test: Add tests or refactor an existing one.
+ feat: A new feature for the user.<br>
+ fix: Fixes a bug that affects the user.<br>
+ perf: Changes that improve site performance.<br>
+ build: Changes to the build system, deployment or installation tasks.<br>
+ ci: Changes in continuous integration.<br>
+ docs: Changes in documentation.<br>
+ Refactor: Refactoring code as variable or function name changes.<br>
+ style: Changes of formatting, tabs, spaces or semicolons, etc They do not affect the user.<br>
+ test: Add tests or refactor an existing one.<br>
 
 EXAMPLE:
 gitfast feat-web: Add new search feature
