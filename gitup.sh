@@ -25,17 +25,30 @@ read quehacer
 			git branch -M main
 			git remote add origin $ssh
 			git push -u origin main
-			;;		
-		2) echo "Introduzca el nombre del repositorio y el URL.."
-			read name remote
-        		echo "Agregando Repositorio Remoto ";
-        		git remote add $name $remote
-			git branch -M main
-			git push -u origin main
 			;;
+		2) read -p "Se ejecuto git clone: [y/n] " res
+                        if [[ $res == n ]]
+                        then
+                        echo "Introduzca el URL.."
+                        read clone
+                        echo "Clonando..."
+                        git clone $clone
+                        elif [[ $res == y ]]
+                        then
+                        echo "continuando..."
+                        echo "Introduzca el nombre del repositorio y el URL.."
+                        read name remote
+                        echo "Agregando Repositorio Remoto "
+                        git remote add $name $remote
+                        git branch -M main
+                        git push -u origin main
+                        else
+                        echo "Esa opción no es valida"
+                        fi
+                        ;;
 		3) echo "Actualizando el Status";
 			git status
-			;;		
+			;;
 		4) echo "Agregando Nuevos Repositorios";
 			git add .
 			;;
