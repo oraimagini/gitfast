@@ -1,11 +1,11 @@
-### GITFAST - Terminal tool to level up on your GitHub.
+## GITFAST - Terminal tool to level up on your GitHub.
 
-#### USAGE:
+### USAGE:
 ```
    gitfast [message]
 ```
 
-#### OPTIONS:
+### OPTIONS:
 ```
    -h | --help     Show this manual.
 ```
@@ -22,35 +22,35 @@
  style: Changes of formatting, tabs, spaces or semicolons, etc They do not affect the user.<br>
  test: Add tests or refactor an existing one.<br>
 
-#### EXAMPLE:
+### EXAMPLE:
 ```
 gitfast feat-web: Add new search feature
 ```
 
 
 
-## Required 
+### Required 
 
 * [`git`](https://github.com/git/git)
 
 
 
-## Install 
+### Install 
 
-### Debian
+#### Debian
 ```
 sudo apt update
 sudo apt install git
 git --version
 ```
 
-### Fedora
+#### Fedora
 ```
 sudo dnf upgrade --refresh
 sudo dnf install git -y
 ```
 
-### Arch
+#### Arch
 ```
 $ sudo pacman -Syyu
 sudo pacman -S git
@@ -58,20 +58,28 @@ sudo pacman -S git
 
 
 
-## Config Global
-### The first step is to provide your name that will be set Globally.
+### Config Global
+#### The first step is to provide your name that will be set Globally.
 ```
 git config --global user.name "YOUR NAME"
 ```
-### Next, select your e-mail; this can be fake if you prefer.
+#### Next, select your e-mail; this can be fake if you prefer.
 ```
 git config --global user.email "YOUR EMAIL"
 ```
 #### then create a directory for users who want to create a new directory strictly for GIT and you're good to go.
 
+#### Copy these aliases to your .bashrc
+```
+# Aliases:
 
+# gitfast
+alias gitfast='$HOME/workspace/config/cli/gitfast.sh'
+# gitfast
+alias gitup='$HOME/workspace/config/cli/gitup.sh'
+```
 
-## RUN
+### RUN
 ```
 gitfast [message]
 ```
