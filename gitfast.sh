@@ -1,7 +1,7 @@
 #!/bin/bash
 
 msg=$@
-:user=$(whoami)
+user=$(whoami)
 
 show_usage() {
       echo -e "\nGITFAST - Terminal tool to level up on your GitHub."
@@ -45,6 +45,6 @@ elif [[ $msg == "-h" || $msg == "--help" ]]
 then
   show_usage
 else
-  echo "🧐 $user, Se subirán tus cambios..."
+  echo "🧐 $user, Your changes will be uploaded..."
   git_pull && git_fast
 fi
