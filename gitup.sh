@@ -2,18 +2,18 @@
 user=$(whoami)
 while :
 do
-echo "Bienvenido a GitUp $user"
-echo "1. Git Init"
-echo "2. Git Remote"
-echo "3. Git Status"
-echo "4. Git Add"
-echo "5. Git Commit"
-echo "6. Git Push"
-echo "7. Git clone"
-echo "8. Git Pull"
-echo "9. Exit"
+echo " Bienvenido a GitUp $user"
+echo " 1. Git Init"
+echo " 2. Git Remote"
+echo " 3. Git Status"
+echo " 4. Git Add"
+echo " 5. Git Commit"
+echo " 6. Git Push"
+echo " 7. Git clone"
+echo " 8. Git Pull"
+echo " 9. Exit"
 
-read quehacer
+read -p " " quehacer
 	case $quehacer in
 		1) echo "Introduzca el URL.."
 			read ssh
