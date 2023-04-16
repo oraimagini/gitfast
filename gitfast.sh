@@ -1,7 +1,7 @@
 #!/bin/bash
 
 msg=$@
-user=$(whoami)
+:user=$(whoami)
 
 show_usage() {
       echo -e "\nGITFAST - Terminal tool to level up on your GitHub."
@@ -23,6 +23,18 @@ show_usage() {
       echo -e "gitfast feat-web: Add new search feature\n"
 }
 
+git_pull() {
+   git pull
+}
+
+git_fast() {
+  git status
+  git add .
+  git commit -m "$msg"
+  git push
+  git status
+}
+
 if [[ $msg = "" ]]
 then
   echo "🚫 Empty parameter field"
@@ -34,9 +46,5 @@ then
   show_usage
 else
   echo "🧐 $user, Se subirán tus cambios..."
-  git status
-  git add .
-  git commit -m "$msg"
-  git push
-  git status
+  git_pull && git_fast
 fi
