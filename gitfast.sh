@@ -24,27 +24,29 @@ show_usage() {
 }
 
 git_pull() {
-   git pull
+   git pull && echo -e "\e[32;1m ==> \e[0m your pull was successful"
 }
 
 git_fast() {
   git status
   git add .
   git commit -m "$msg"
-  git push
-  git status
+  echo -e "\e[32;1m ==> \e[0m your commit was successful"
+  echo -e "\e[34;1m  -> \e[0m $msg"
+  git push && echo -e "\e[32;1m ==> your push was successful\e[0m"
+#  git status
 }
 
 if [[ $msg = "" ]]
 then
-  echo "🚫 Empty parameter field"
-  echo "💬 You must put a message in your commit !!"
+  echo -e "\x1b[91;49;1mX\e[0m Empty parameter field"
+  echo -e "\x1b[37;49;1m...\e[0m You must put a message in your commit !!"
   echo "   EXAMPLE: gitfast type-scope: description"
   exit
 elif [[ $msg == "-h" || $msg == "--help" ]]
 then
   show_usage
 else
-  echo "🧐 $user, Your changes will be uploaded..."
+  echo -e "\e[34;1m :: \e[0m $user, your changes will be uploaded"
   git_pull && git_fast
 fi
